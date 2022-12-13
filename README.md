@@ -1,4 +1,4 @@
-# [next-middleware-route](https://www.npmjs.com/package/next-middlware-route)
+# [next-middleware-route](https://www.npmjs.com/package/next-middleware-route)
 
 This library extends next routes with a middleware option in a simple manner.
 
@@ -22,7 +22,7 @@ Next supports middlewares natively, please check if the scope you need is alread
 
 ```bash
 # npm
-npm i next-middlware-route
+npm i next-middleware-route
 
 # yarn
 yarn add next-middleware-route
