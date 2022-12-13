@@ -196,7 +196,7 @@ export default function methodMiddleware(methods: HttpMethod | HttpMethod[]): Mi
 You can use it like this: 
 
 ```ts
-export default makeRoute(handler, {
+export default makeMyRoute(handler, {
   middlewares: [methodMiddleware("GET")]
 });
 ```
