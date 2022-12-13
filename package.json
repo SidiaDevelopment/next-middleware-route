@@ -1,0 +1,21 @@
+{
+  "name": "next-middlware-route",
+  "version": "1.0.0",
+  "description": "Add middlewares to next routes",
+  "main": "./dist/lib/index.js",
+  "typings": "./dist/types/index.d.ts",
+  "files": [
+    "./dist/*/**"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "author": "Marvin Fischer <admin@sidia.net>",
+  "license": "MIT",
+  "packageManager": "yarn@3.3.0",
+  "dependencies": {
+    "next": "^13.0.6",
+    "typescript": "^4.9.4"
+  }
+}
