@@ -9,12 +9,27 @@
   ],
   "scripts": {
     "build": "tsc",
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "version": "git add -A .",
+    "postversion": "git push && git push --tags",
+    "lint": "eslint . --max-warnings=0"
   },
   "author": "Marvin Fischer <admin@sidia.net>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SidiaDevelopment/next-middleware-route.git"
+  },
+  "homepage": "https://github.com/SidiaDevelopment/next-middleware-route#readme",
   "license": "MIT",
   "packageManager": "yarn@3.3.0",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1"
+  },
   "dependencies": {
+    "eslint": "^8.29.0",
     "next": "^13.0.6",
     "typescript": "^4.9.4"
   }
