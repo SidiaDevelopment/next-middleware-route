@@ -4,7 +4,7 @@ This library extends next routes with a middleware option in a simple manner.
 
 Next supports middlewares natively, please check if the scope you need is already handled by it: https://nextjs.org/docs/advanced-features/middleware
 
-## Content
+# Content
 <!-- TOC -->
   * [Installation](#installation)
   * [Usage](#usage)
@@ -17,7 +17,7 @@ Next supports middlewares natively, please check if the scope you need is alread
     * [Parse body in middlewares](#parse-body-in-middlewares)
 <!-- TOC -->
 
-## Installation
+# Installation
 
 ```bash
 # npm
@@ -29,15 +29,16 @@ yarn add next-middleware-route
 
 Typescript is natively supported, no `@types/...` package needed.
 
-## Usage
+# Usage
 
 All usage examples are shown for Typescript. For Javascript just remove the type annotations.
 
 This library provides two additional functionalities: 
 - Add data to a request based on request data
 - Cancel a request and show an error message before it reaches the route
-### Defining middlewares
-#### Add data
+## Defining middlewares
+
+### Add data
 
 To extend the HttpContext we use merged interfaces.
 
@@ -68,7 +69,7 @@ export default customDataMiddleware;
 The middleware will execute before the targeted request function is execute, and you will be able to access your 
 `ctx.customData` in the targeted request.
 
-#### Check and cancel request
+### Check and cancel request
 
 ```ts
 import {NextApiRequest, NextApiResponse} from "next";
@@ -96,7 +97,7 @@ The default error handler responds with the following:
 res.status(code).json({error: message});
 ```
 
-### Attaching middlewares to routes
+## Attaching middlewares to routes
 
 To attach a middleware you wrap the actual route handler with a `makeRoute` and pass all middlewares as an option.
 
@@ -129,7 +130,7 @@ export default makeRoute(handler, {
 });
 ```
 
-### Custom error handling
+## Custom error handling
 
 You can define a custom error handler per route like this:
 
@@ -164,7 +165,7 @@ export default function makeMyRoute<T = unknown>(handler: MiddlewareRoute<T>, {
 }
 ```
 
-### Middlewares with parameters
+## Middlewares with parameters
 
 If your middleware should have parameters you can wrap them in a function. Here is an example for multiple HttpMethods:
 
@@ -200,7 +201,7 @@ export default makeRoute(handler, {
 });
 ```
 
-### Parse body in middlewares
+## Parse body in middlewares
 
 Every route that uses a middleware which does custom body parsing needs the following export: 
 ```ts
