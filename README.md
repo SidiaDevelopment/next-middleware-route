@@ -171,7 +171,6 @@ export default function makeMyRoute<T = unknown>(handler: MiddlewareRoute<T>, {
 If your middleware should have parameters you can wrap them in a function. Here is an example for multiple HttpMethods:
 
 ```ts
-import {Middleware} from "hooks/Middlewares/makeRoute";
 import {NextApiRequest, NextApiResponse} from "next";
 import {makeRoute, sendError, Middleware, IHttpContext} from "next-middleware-route";
 
