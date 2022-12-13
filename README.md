@@ -6,15 +6,16 @@ Next supports middlewares natively, please check if the scope you need is alread
 
 # Content
 <!-- TOC -->
-  * [Installation](#installation)
-  * [Usage](#usage)
-    * [Defining middlewares](#defining-middlewares)
-      * [Add data](#add-data)
-      * [Check and cancel request](#check-and-cancel-request)
-    * [Attaching middlewares to routes](#attaching-middlewares-to-routes)
-    * [Custom error handling](#custom-error-handling)
-    * [Middlewares with parameters](#middlewares-with-parameters)
-    * [Parse body in middlewares](#parse-body-in-middlewares)
+* [Content](#content)
+* [Installation](#installation)
+* [Usage](#usage)
+  * [Defining middlewares](#defining-middlewares)
+    * [Add data](#add-data)
+    * [Check and cancel request](#check-and-cancel-request)
+  * [Attaching middlewares to routes](#attaching-middlewares-to-routes)
+  * [Custom error handling](#custom-error-handling)
+  * [Middlewares with parameters](#middlewares-with-parameters)
+  * [Parse body in middlewares](#parse-body-in-middlewares)
 <!-- TOC -->
 
 # Installation
