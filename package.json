@@ -2,10 +2,10 @@
   "name": "next-middlware-route",
   "version": "1.1.0",
   "description": "Add middlewares to next routes",
-  "main": "./dist/lib/index.js",
-  "typings": "./dist/types/index.d.ts",
+  "main": "dist/lib/index.js",
+  "typings": "dist/types/index.d.ts",
   "files": [
-    "./dist/*/**"
+    "dist/*/**"
   ],
   "scripts": {
     "build": "tsc",
@@ -21,16 +21,19 @@
     "type": "git",
     "url": "git+https://github.com/SidiaDevelopment/next-middleware-route.git"
   },
+  "bugs": {
+    "url": "https://github.com/SidiaDevelopment/next-middleware-route/issues"
+  },
   "homepage": "https://github.com/SidiaDevelopment/next-middleware-route#readme",
   "license": "MIT",
   "packageManager": "yarn@3.3.0",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.46.1",
-    "@typescript-eslint/parser": "^5.46.1"
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint": "^8.29.0",
+    "typescript": "^4.9.4"
   },
   "dependencies": {
-    "eslint": "^8.29.0",
-    "next": "^13.0.6",
-    "typescript": "^4.9.4"
+    "next": "^13.0.6"
   }
 }
